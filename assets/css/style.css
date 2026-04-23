@@ -1,0 +1,83 @@
+:root {
+  /* 🔴 Cor principal - botões (CTA), destaque, ações importantes */
+  --color-primary: #E63946;
+
+  /* 🟡 Cor de destaque - promoções, preços, hover de botões */
+  --color-secondary: #FFD166;
+
+  /* 🟤 Cor de apoio - navbar, cards, elementos que remetem a comida */
+  --color-accent: #8B5E3C;
+
+  /* 🟤 Fundo principal - background geral da página (suave) */
+  --color-background: #FFF3E0;
+
+  /* 🟢 Detalhes - elementos “fresh”, ícones, etiquetas (ex: saudável) */
+  --color-highlight: #2A9D8F;
+
+  --text-color: rgb(255, 255, 255);
+
+  --letter-spacing: .1rem;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.header {
+    background-color: var(--color-accent);
+}
+
+.header ul {
+    text-align: center;
+    list-style: none;
+    padding: 2rem;
+}
+
+.header ul li {
+    padding: 1rem 0;
+    margin: 1rem 2rem;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+    font-weight: bold;
+}
+
+.header ul li:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-highlight);
+}
+
+.header ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.header .active {
+    background-color: var(--color-secondary);
+}
+
+
+.container_title {
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--color-accent);
+    letter-spacing: .1rem;
+}
+
+.container_title_h1 {
+    font-size: 5rem; 
+}
+
+.container_img img {
+    width: 100%;
+}
