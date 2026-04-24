@@ -67,7 +67,7 @@ body {
 }
 
 
-.container_title {
+.container_text {
     text-align: center;
     padding: 0 2rem;
     color: var(--color-accent);
@@ -75,9 +75,49 @@ body {
 }
 
 .container_title_h1 {
-    font-size: 5rem; 
+    font-size: 5rem;
 }
 
-.container_img img {
+img {
     width: 100%;
 }
+
+
+.cards {
+    padding: 2rem 1rem;
+}
+
+.card {
+    background-color: var(--color-accent);
+    margin: 1rem;
+    padding: 1rem 1rem 2rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.card_title {
+    text-align: center;
+    background-color: var(--color-highlight);
+    padding: .5rem;
+    margin: 1rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    color: var(--text-color);
+    letter-spacing: var(--letter-spacing);
+}
+
+.card_name,
+.card_description p {
+    padding-bottom: 1rem;
+    letter-spacing: var(--letter-spacing);
+}
+
+.price {
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
