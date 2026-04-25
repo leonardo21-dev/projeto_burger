@@ -1,30 +1,18 @@
 :root {
-  /* 🔴 Cor principal - botões (CTA), destaque, ações importantes */
-  --color-primary: #E63946;
-
-  /* 🟡 Cor de destaque - promoções, preços, hover de botões */
-  --color-secondary: #FFD166;
-
-  /* 🟤 Cor de apoio - navbar, cards, elementos que remetem a comida */
-  --color-accent: #8B5E3C;
-
-  /* 🟤 Fundo principal - background geral da página (suave) */
-  --color-background: #FFF3E0;
-
-  /* 🟢 Detalhes - elementos “fresh”, ícones, etiquetas (ex: saudável) */
-  --color-highlight: #2A9D8F;
-
-  --text-color: rgb(255, 255, 255);
-
-  --letter-spacing: .1rem;
-
+    --color-primary: #E63946;
+    --color-secondary: #FFD166;
+    --color-accent: #8B5E3C;
+    --color-background: #FFF3E0;
+    --color-highlight: #2A9D8F;
+    --text-color: rgb(255, 255, 255);
+    --letter-spacing: .1rem;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jost", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
 }
 
 body {
@@ -52,7 +40,7 @@ body {
     font-weight: bold;
 }
 
-.header ul li:hover{
+.header ul li:hover {
     background-color: var(--color-secondary);
     color: var(--color-highlight);
 }
@@ -82,9 +70,8 @@ img {
     width: 100%;
 }
 
-
 .cards {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0rem;
 }
 
 .card {
@@ -114,10 +101,113 @@ img {
     letter-spacing: var(--letter-spacing);
 }
 
-.price {
-    color: var(--color-secondary);
+.card_name {
+    text-transform: uppercase;
+    /* font-size: 1.2rem; */
+}
+
+.card_price {
     font-weight: bold;
     font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.card_description .price {
+    background-color: var(--color-secondary);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_description .price:hover {
+    background-color: #e9bf5f;
+}
+
+.card_description a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.cards_option {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+    padding: 0 1.4rem;
+    background-color: var(--color-highlight);
+}
+
+.cards_option h3 {
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing);
+    flex: 1;
+}
+
+.cards_option a {
+    color: var(--color-background);
+    background-color: var();
+    padding: .5rem;
+    margin-right: .5rem;
+    font-size: 2.5rem;
+}
+
+.fa-money-bill-1 {
+    margin-right: .2rem;
 }
 
 
+.cards_drinks {
+    padding: 2rem 0rem 0rem;
+    margin: 1rem;
+}
+
+.card_drink {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    color: var(--text-color);
+    margin: 1rem 1rem;
+    padding: .5rem;
+    flex: 1;
+}
+
+.card_options_drink a {
+    text-decoration: none;
+}
+
+.card_drink img {
+    max-width: 100px;
+}
+
+.card_drink h3 {
+    padding: 1rem;
+    flex: 1;
+}
+
+
+.container_footer {
+    text-align: center;
+    background-color: var(--color-accent);
+    color: var(--text-color);
+    letter-spacing: var(--letter-spacing);
+    padding: 2rem 2rem 1rem;
+}
+
+.container_footer h3,
+.footer_p {
+    padding-bottom: 1rem;
+    letter-spacing: var(--letter-spacing);
+}
+
+.container_footer h3 {
+    text-transform: uppercase;
+}
