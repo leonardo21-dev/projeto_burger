@@ -30,7 +30,7 @@ body {
 }
 
 .header ul li {
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     margin: 1rem 2rem;
     font-size: 1rem;
     background-color: var(--color-primary);
@@ -54,7 +54,6 @@ body {
     background-color: var(--color-secondary);
 }
 
-
 .container_text {
     text-align: center;
     padding: 0 2rem;
@@ -70,6 +69,10 @@ img {
     width: 100%;
 }
 
+.card img {
+    max-width: 18.75rem;
+}
+
 .cards {
     padding: 2rem 1rem 0rem;
 }
@@ -81,9 +84,11 @@ img {
     border-radius: 1rem;
     color: var(--text-color);
     text-align: center;
+    flex: 1;
 }
 
 .card_title {
+    padding: 0 2rem;
     text-align: center;
     background-color: var(--color-highlight);
     padding: .5rem;
@@ -103,7 +108,6 @@ img {
 
 .card_name {
     text-transform: uppercase;
-    /* font-size: 1.2rem; */
 }
 
 .card_price {
@@ -210,4 +214,101 @@ img {
 
 .container_footer h3 {
     text-transform: uppercase;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .5rem;
+    grid-auto-flow: dense;
+}
+
+.row>.sm-12 {
+    grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 37.5em) {
+    .header ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .header ul li {
+        margin: 0.5rem;
+        flex: 1;
+    }
+
+    .container_title_h1 {
+        font-size: 10rem;
+    }
+
+    .container_text p {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .card_options_drink {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (min-width: 48em) {
+    .card {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card_description {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .card img {
+        min-height: 18.75em;
+    }
+
+    .card_options_drink img {
+        width: 6.25em;
+        height: 5.9375em;
+    }
+
+    .price {
+        margin-top: auto;
+    }
+
+    .row>.md-1-7 {
+        grid-column: 1 / 7;
+    }
+
+    .row>.md-7-13 {
+        grid-column: 7 / 13;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .row>.lg-1-7 {
+        grid-column: 1 / 7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row>.lg-7-13 {
+        grid-column: 7 / 13;
+    }
+
+    .container_p {
+        margin-top: 1rem;
+    }
 }
