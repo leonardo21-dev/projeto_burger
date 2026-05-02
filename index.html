@@ -19,7 +19,11 @@
 <body>
     <header class="header">
         <nav>
-            <ul>
+            <input type="checkbox" class="menu-btn hide" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu">
                 <li class="active"><a href="#inicio">Inicio</a></li>
                 <li><a href="#promo">Promoções</a></li>
                 <li><a href="#pedidos">Pedidos</a></li>
@@ -27,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    <main class="container_principal row">
+    <main class="container_principal row" id="inicio">
         <div class="container_text sm-12 lg-1-7">
             <h1 class="container_title_h1">Burger</h1>
             <p>Os melhores hambúrgueres artesanais, feitos com ingredientes frescos e muito sabor.</p>
@@ -39,7 +43,7 @@
             <p class="container_p">Do fogo à perfeição: hambúrguer artesanal de verdade.</p>
         </div>
     </main>
-    <section class="cards">
+    <section class="cards" id="promo">
         <h2 class="card_title">Cardápio</h2>
         <div class="cards_option">
             <a href="#"><i class="fa-solid fa-burger"></i></a>
